@@ -13,9 +13,16 @@ const Home: NextPage = () => {
       </Head>
           <Header />
           <Banner />
+
+        {/*Posts */}
        
     </div>
   )
+}
+export const getServerSideProps = async () => {
+  return {
+    props: { },
+  }
 }
 
 export default Home

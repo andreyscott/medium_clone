@@ -5,10 +5,17 @@ export default {
   fields: [
     {
       name: 'title',
-      title: 'Title',
+      title: 'Title', 
+      description: 'The title of the post',
       type: 'string',
     },
     {
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+    },
+    {
+
       name: 'slug',
       title: 'Slug',
       type: 'slug',
