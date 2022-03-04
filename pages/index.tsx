@@ -33,7 +33,7 @@ export default function Home({ posts }: Props) {
         </div>
 
         <img
-          src="/images/logo/medium-1.svg"
+          src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
           className="hidden h-32 px-10 md:inline-flex"
         />
       </div>
