@@ -31,6 +31,13 @@ export default function Home({ posts }: Props) {
             It's easy and free to post your thinking on any topic and connect
             with millions of readers.
           </h2>
+          <h3>
+          <a className="text-lg bg-white   border border-black px-4 py-3 rounded-full"
+                               href="https://medium.com/">Start Writing</a>
+          </h3>
+
+          
+          
         </div>
 
         <img
