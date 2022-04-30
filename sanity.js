@@ -1,6 +1,3 @@
-
-
-
 import {
   createCurrentUserHook,
   createClient,
