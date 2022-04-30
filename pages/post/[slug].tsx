@@ -26,7 +26,6 @@ const Post = ({ post }: Props) => {
     formState: { errors },
   } = useForm<IFormInput>();
 
-
   const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     console.log(data);
 
