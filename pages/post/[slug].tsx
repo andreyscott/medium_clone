@@ -18,14 +18,13 @@ interface Props {
   post: Post;
 }
 
-const Post = ({ post }: Props) => {
+const Poster = ({ post }: Props) => {
   const [submitted, setSubmitted] = useState(false);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<IFormInput>();
-
 
   const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     console.log(data);
@@ -197,7 +196,7 @@ const Post = ({ post }: Props) => {
   );
 };
 
-export default Post;
+export default Poster;
 
 export const getStaticPaths = async () => {
   const query = `*[_type == "post"] {
