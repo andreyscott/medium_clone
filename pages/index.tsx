@@ -4,7 +4,9 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { sanityClient, urlFor } from '../sanity';
 import { Post } from '../typing.d';
-
+// import MapComponent from '../components/Mapcomponents';
+import Maps from '../components/mapp/';
+import Form from '../components/Form';
 interface Props {
   posts: [Post];
 }
@@ -19,7 +21,7 @@ export default function Home({ posts }: Props) {
       </Head>
       <Header />
 
-      <div className="flex items-center justify-between border-y border-black bg-[#c4e2ff]  py-10 lg:py-5">
+      {/* <div className="flex items-center justify-between border-y border-black bg-[#c4e2ff]  py-10 lg:py-5">
         <div className="space-y-5 px-10">
           <h1 className="max-w-xl font-serif text-6xl">
             <span className="underline decoration-black decoration-4">
@@ -44,10 +46,10 @@ export default function Home({ posts }: Props) {
           src="/images/Capture.png"
           className="hidden h-39 px-10 md:inline-flex"
         />
-      </div>
+      </div> */}
 
       {/* Posts */}
-      <div className="grid grid-cols-1 gap-3 p-2 sm:grid-cols-2 md:gap-6 md:p-6">
+      {/* <div className="grid grid-cols-1 gap-3 p-2 sm:grid-cols-2 md:gap-6 md:p-6">
         {posts.map((post) => {
           return (
             <Link key={post._id} href={`/post/${post.slug.current}`}>
@@ -75,7 +77,21 @@ export default function Home({ posts }: Props) {
             </Link>
           ); 
         })}
+      </div> */}
+      <div className='flex flex-col md:flex-row items-center md:justify-evenly justify-center'>
+      <Maps />
+      <Form />
       </div>
+      <section className="bg-white p-5">
+        <Link href='/test'>
+          <a className="text-lg font-bold">
+            <span className="underline decoration-black decoration-4">
+              Medium
+            </span>{' '}
+            is a place to write, read and connect with others.
+          </a>
+        </Link>
+      </section>
       <Footer />
     </div>
   );
